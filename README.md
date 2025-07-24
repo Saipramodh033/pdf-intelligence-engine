@@ -40,6 +40,9 @@ docker build --platform linux/amd64 -f Dockerfile.challenge1a -t challenge1a:lat
 
 # Run  
 docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none challenge1a:latest
+
+#Run for Windows 
+docker run --rm -v "${PWD}/input:/app/input" -v "${PWD}/output:/app/output" --network none challenge1a:latest
 ```
 
 ### Challenge 1B - Document Intelligence
